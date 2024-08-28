@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Video de Fondo</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+ 
+        .video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+ 
+        .content {
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+ 
+        .links {
+            margin-top: 20px;
+        }
+ 
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+ 
+        .links a:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        #background-video {  
+           position: absolute;  
+           top: 0;  
+           left: 0;  
+           width: 100%;  
+           height: 100%;  
+           object-fit: cover;  
+           z-index: -1;  
+        }
+    </style>
+</head>
+<body>
+    <video class="video-bg" autoplay muted loop>
+        <source src="ruta/al/video/VID-20240607-WA0000.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+ 
+    <div class="content">
+        <h1>Bienvenido a mi Página</h1>
+        <div class="links">
+            <a href="https://view.genially.com/665a4108ef0fbf0014720a5d/interactive-content-relaciona-fracciones">Relación de fracciones</a>
+            <a href="https://view.genially.com/66a93ef42bcaa07950d1b12b/interactive-content-diferencia-de-fracciones-y-fraccionarios">Diferencia de Fracciones</a>
+            <a href="https://view.genially.com/66aa99d0ea7e20db44a85aef/interactive-content-aprende-fracciones-y-fraccionarios">Aprende fracciones</a>
+            <a href="https://view.genially.com/66aa9d5b8a202a827d54383d/interactive-content-mundo-de-fracciones">Aventura espacial</a>
+            <a href="index.html">Regresar</a>
+            <video muted="" loop="" autoplay="" id="background-video">  
+            <source type="video/mp4" src="diseño-juegos.mp4">  
+             Your browser does not support the video tag.  
+        </video>
+        </div>
+    </div>
+</body>
+</html>
